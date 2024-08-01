@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "fxExVQcH3IZAxDPip83aostq+tJx2hF201W62AXE+fzU8WcnUiOEqUioxautrVkw4hAeaxp4G+imxoKlpoy63w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\91886\\source\\repos\\ZPlusGameTests\\ZPlusGameTests\\ZPlusGameTests.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\91886\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
+    "C:\\Users\\91886\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\91886\\.nuget\\packages\\nunit\\4.1.0\\nunit.4.1.0.nupkg.sha512",
+    "C:\\Users\\91886\\.nuget\\packages\\nunit.analyzers\\4.3.0\\nunit.analyzers.4.3.0.nupkg.sha512",
+    "C:\\Users\\91886\\.nuget\\packages\\nunit.consolerunner\\3.18.1\\nunit.consolerunner.3.18.1.nupkg.sha512",
+    "C:\\Users\\91886\\.nuget\\packages\\nunit3testadapter\\4.6.0\\nunit3testadapter.4.6.0.nupkg.sha512",
+    "C:\\Users\\91886\\.nuget\\packages\\selenium.chrome.webdriver\\85.0.0\\selenium.chrome.webdriver.85.0.0.nupkg.sha512",
+    "C:\\Users\\91886\\.nuget\\packages\\selenium.support\\4.23.0\\selenium.support.4.23.0.nupkg.sha512",
+    "C:\\Users\\91886\\.nuget\\packages\\selenium.webdriver\\4.23.0\\selenium.webdriver.4.23.0.nupkg.sha512",
+    "C:\\Users\\91886\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "C:\\Users\\91886\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}
