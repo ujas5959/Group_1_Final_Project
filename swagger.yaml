@@ -1,0 +1,681 @@
+openapi: 3.0.3
+info:
+  title: Group 1 Final Project
+  version: 1.0.0
+  description: API for managing posts, comments, albums, photos, todos, and users on a social media platform.
+servers:
+  - url: https://jsonplaceholder.typicode.com
+
+tags:
+  - name: Posts
+  - name: Comments
+  - name: Albums
+  - name: Photos
+  - name: Todos
+  - name: Users
+
+paths:
+  /posts:
+    get:
+      summary: List all posts
+      description: Retrieve a list of all posts.
+      tags: [Posts]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Post'
+    post:
+      summary: Create a new post
+      description: Create a new post with the provided data.
+      tags: [Posts]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostInput'
+      responses:
+        '201':
+          description: Post created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Post'
+
+  /posts/{postId}:
+    parameters:
+      - name: postId
+        in: path
+        required: true
+        schema:
+          type: integer
+    get:
+      summary: Get a post by ID
+      description: Retrieve a specific post by its ID.
+      tags: [Posts]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Post'
+    put:
+      summary: Update a post
+      description: Update an existing post with the provided data.
+      tags: [Posts]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostInput'
+      responses:
+        '200':
+          description: Post updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Post'
+    delete:
+      summary: Delete a post
+      description: Delete a specific post by its ID.
+      tags: [Posts]
+      responses:
+        '204':
+          description: Post deleted successfully
+
+  /comments:
+    get:
+      summary: List all comments
+      description: Retrieve a list of all comments.
+      tags: [Comments]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Comment'
+    post:
+      summary: Create a new comment
+      description: Create a new comment with the provided data.
+      tags: [Comments]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CommentInput'
+      responses:
+        '201':
+          description: Comment created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Comment'
+
+  /comments/{commentId}:
+    parameters:
+      - name: commentId
+        in: path
+        required: true
+        schema:
+          type: integer
+    get:
+      summary: Get a comment by ID
+      description: Retrieve a specific comment by its ID.
+      tags: [Comments]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Comment'
+    put:
+      summary: Update a comment
+      description: Update an existing comment with the provided data.
+      tags: [Comments]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CommentInput'
+      responses:
+        '200':
+          description: Comment updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Comment'
+    delete:
+      summary: Delete a comment
+      description: Delete a specific comment by its ID.
+      tags: [Comments]
+      responses:
+        '204':
+          description: Comment deleted successfully
+
+# ... (previous content remains the same)
+
+  /albums:
+    get:
+      summary: List all albums
+      description: Retrieve a list of all albums.
+      tags: [Albums]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Album'
+    post:
+      summary: Create a new album
+      description: Create a new album with the provided data.
+      tags: [Albums]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AlbumInput'
+      responses:
+        '201':
+          description: Album created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Album'
+
+  /albums/{albumId}:
+    parameters:
+      - name: albumId
+        in: path
+        required: true
+        schema:
+          type: integer
+    get:
+      summary: Get an album by ID
+      description: Retrieve a specific album by its ID.
+      tags: [Albums]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Album'
+    put:
+      summary: Update an album
+      description: Update an existing album with the provided data.
+      tags: [Albums]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AlbumInput'
+      responses:
+        '200':
+          description: Album updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Album'
+    delete:
+      summary: Delete an album
+      description: Delete a specific album by its ID.
+      tags: [Albums]
+      responses:
+        '204':
+          description: Album deleted successfully
+
+  /photos:
+    get:
+      summary: List all photos
+      description: Retrieve a list of all photos.
+      tags: [Photos]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Photo'
+    post:
+      summary: Create a new photo
+      description: Create a new photo with the provided data.
+      tags: [Photos]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PhotoInput'
+      responses:
+        '201':
+          description: Photo created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Photo'
+
+  /photos/{photoId}:
+    parameters:
+      - name: photoId
+        in: path
+        required: true
+        schema:
+          type: integer
+    get:
+      summary: Get a photo by ID
+      description: Retrieve a specific photo by its ID.
+      tags: [Photos]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Photo'
+    put:
+      summary: Update a photo
+      description: Update an existing photo with the provided data.
+      tags: [Photos]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PhotoInput'
+      responses:
+        '200':
+          description: Photo updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Photo'
+    delete:
+      summary: Delete a photo
+      description: Delete a specific photo by its ID.
+      tags: [Photos]
+      responses:
+        '204':
+          description: Photo deleted successfully
+
+  /todos:
+    get:
+      summary: List all todos
+      description: Retrieve a list of all todos.
+      tags: [Todos]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Todo'
+    post:
+      summary: Create a new todo
+      description: Create a new todo with the provided data.
+      tags: [Todos]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TodoInput'
+      responses:
+        '201':
+          description: Todo created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Todo'
+
+  /todos/{todoId}:
+    parameters:
+      - name: todoId
+        in: path
+        required: true
+        schema:
+          type: integer
+    get:
+      summary: Get a todo by ID
+      description: Retrieve a specific todo by its ID.
+      tags: [Todos]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Todo'
+    put:
+      summary: Update a todo
+      description: Update an existing todo with the provided data.
+      tags: [Todos]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TodoInput'
+      responses:
+        '200':
+          description: Todo updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Todo'
+    delete:
+      summary: Delete a todo
+      description: Delete a specific todo by its ID.
+      tags: [Todos]
+      responses:
+        '204':
+          description: Todo deleted successfully
+
+  /users:
+    get:
+      summary: List all users
+      description: Retrieve a list of all users.
+      tags: [Users]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+    post:
+      summary: Create a new user
+      description: Create a new user with the provided data.
+      tags: [Users]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserInput'
+      responses:
+        '201':
+          description: User created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+
+  /users/{userId}:
+    parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: integer
+    get:
+      summary: Get a user by ID
+      description: Retrieve a specific user by their ID.
+      tags: [Users]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+    put:
+      summary: Update a user
+      description: Update an existing user with the provided data.
+      tags: [Users]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserInput'
+      responses:
+        '200':
+          description: User updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+    delete:
+      summary: Delete a user
+      description: Delete a specific user by their ID.
+      tags: [Users]
+      responses:
+        '204':
+          description: User deleted successfully
+
+
+components:
+  schemas:
+    Post:
+      type: object
+      properties:
+        id:
+          type: integer
+        userId:
+          type: integer
+        title:
+          type: string
+        body:
+          type: string
+
+    PostInput:
+      type: object
+      properties:
+        userId:
+          type: integer
+        title:
+          type: string
+        body:
+          type: string
+      required:
+        - userId
+        - title
+        - body
+
+    Comment:
+      type: object
+      properties:
+        id:
+          type: integer
+        postId:
+          type: integer
+        name:
+          type: string
+        email:
+          type: string
+        body:
+          type: string
+
+    CommentInput:
+      type: object
+      properties:
+        postId:
+          type: integer
+        name:
+          type: string
+        email:
+          type: string
+        body:
+          type: string
+      required:
+        - postId
+        - name
+        - email
+        - body
+
+    
+    Album:
+      type: object
+      properties:
+        id:
+          type: integer
+        userId:
+          type: integer
+        title:
+          type: string
+
+    AlbumInput:
+      type: object
+      properties:
+        userId:
+          type: integer
+        title:
+          type: string
+      required:
+        - userId
+        - title
+
+    Photo:
+      type: object
+      properties:
+        id:
+          type: integer
+        albumId:
+          type: integer
+        title:
+          type: string
+        url:
+          type: string
+        thumbnailUrl:
+          type: string
+
+    PhotoInput:
+      type: object
+      properties:
+        albumId:
+          type: integer
+        title:
+          type: string
+        url:
+          type: string
+        thumbnailUrl:
+          type: string
+      required:
+        - albumId
+        - title
+        - url
+        - thumbnailUrl
+
+    Todo:
+      type: object
+      properties:
+        id:
+          type: integer
+        userId:
+          type: integer
+        title:
+          type: string
+        completed:
+          type: boolean
+
+    TodoInput:
+      type: object
+      properties:
+        userId:
+          type: integer
+        title:
+          type: string
+        completed:
+          type: boolean
+      required:
+        - userId
+        - title
+        - completed
+
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        username:
+          type: string
+        email:
+          type: string
+        address:
+          $ref: '#/components/schemas/Address'
+        phone:
+          type: string
+        website:
+          type: string
+        company:
+          $ref: '#/components/schemas/Company'
+
+    UserInput:
+      type: object
+      properties:
+        name:
+          type: string
+        username:
+          type: string
+        email:
+          type: string
+        address:
+          $ref: '#/components/schemas/Address'
+        phone:
+          type: string
+        website:
+          type: string
+        company:
+          $ref: '#/components/schemas/Company'
+      required:
+        - name
+        - username
+        - email
+
+    Address:
+      type: object
+      properties:
+        street:
+          type: string
+        suite:
+          type: string
+        city:
+          type: string
+        zipcode:
+          type: string
+        geo:
+          $ref: '#/components/schemas/Geo'
+
+    Geo:
+      type: object
+      properties:
+        lat:
+          type: string
+        lng:
+          type: string
+
+    Company:
+      type: object
+      properties:
+        name:
+          type: string
+        catchPhrase:
+          type: string
+        bs:
+          type: string
