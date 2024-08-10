@@ -1,0 +1,48 @@
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\obj\Debug\ZPlusGameTests.csproj.AssemblyReference.cache
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\obj\Debug\ZPlusGameTests.csproj.CoreCompileInputs.cache
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\nunit.engine.dll
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\nunit.engine.api.dll
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\nunit.engine.core.dll
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\testcentric.engine.metadata.dll
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\ZPlusGameTests.dll
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\ZPlusGameTests.pdb
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\SeleniumExtras.WaitHelpers.dll
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\nunit.framework.dll
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\nunit.framework.legacy.dll
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\WebDriver.Support.dll
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\WebDriver.dll
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\obj\Debug\ZPlusGameTests.csproj.CopyComplete
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\obj\Debug\ZPlusGameTests.dll
+C:\Users\91886\source\repos\ZPlusGameTests\ZPlusGameTests\obj\Debug\ZPlusGameTests.pdb
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\selenium-manager\linux\selenium-manager
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\selenium-manager\macos\selenium-manager
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\selenium-manager\windows\selenium-manager.exe
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\NUnit3.TestAdapter.dll
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\NUnit3.TestAdapter.pdb
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\nunit.engine.dll
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\nunit.engine.api.dll
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\nunit.engine.core.dll
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\testcentric.engine.metadata.dll
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\ZPlusGameTests.dll
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\ZPlusGameTests.pdb
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\SeleniumExtras.WaitHelpers.dll
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\Newtonsoft.Json.dll
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\nunit.framework.dll
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\nunit.framework.legacy.dll
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\WebDriver.Support.dll
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\WebDriver.dll
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\obj\Debug\ZPlusGameTests.csproj.AssemblyReference.cache
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\obj\Debug\ZPlusGameTests.csproj.CoreCompileInputs.cache
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\obj\Debug\ZPlusGameTests.csproj.CopyComplete
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\obj\Debug\ZPlusGameTests.dll
+D:\Final Proj\ZPlusGameTests\ZPlusGameTests\obj\Debug\ZPlusGameTests.pdb
